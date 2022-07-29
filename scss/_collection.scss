@@ -1,0 +1,66 @@
+.collection {
+    margin-top: 90px;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+
+    & h1 {
+        align-self: flex-start;
+        color: #fff;
+        font-size: 38px;
+    }
+
+    &__box {
+        margin-top: 38px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 22px;
+    }
+
+    &__item {
+        max-width: 536px;
+        color: #fff;
+
+        &-box-img {
+            height: 326px;
+            overflow: hidden;
+        }
+
+        & img {
+            object-fit: cover;
+            width: 100%;
+            transition: 1s;
+        }
+
+        &:hover .collection__item-img {
+            transform: scale(1.2); 
+        }
+
+        & h4 {
+            margin-top: 16px;
+            font-size: 24px;
+        }
+
+        & p {
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    }
+
+    &-link {
+        padding: 15px 33px;
+        border: 1px solid $mainColor;
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 13px;
+        margin-top: 75px;
+
+        &:hover {
+            background: $mainColor;
+            
+        }
+    }
+}

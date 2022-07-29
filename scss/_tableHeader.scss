@@ -1,0 +1,120 @@
+@media(max-width: 1630px) {
+    .header {
+        padding: 0 30px;
+    }
+}
+
+@media(max-width: 1020px) {
+    .header__menu-btn {
+        display: flex;
+        align-items: center;
+
+        & input {
+            display: none;
+        }
+
+        & label {
+            display: block;
+            width: 32px;
+            height: 30px;
+
+            & div {
+                height: 3px;
+                background: #000;
+                margin-top: 5px;
+            }
+        }
+    }
+
+    .header__menu-input:checked ~ 
+    .header__menu-label div:nth-child(1) {
+        transform: rotate(45deg);
+        margin-top: 13px;
+    }
+
+    .header__menu-input:checked ~ 
+    .header__menu-label div:nth-child(2) {
+        display: none;
+    }
+
+    .header__menu-input:checked ~ 
+    .header__menu-label div:nth-child(3) {
+        transform: rotate(-45deg);
+        margin-top: -3px;
+    }
+
+    .header__menu-input:checked ~ label .header__nav {
+        display: block;
+    }
+
+    .header__top {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        &-desc a:nth-child(2),
+        &-desc a:nth-child(3) {
+            display: none;
+        }
+
+        &-desc {
+            justify-self: end;
+        }
+    }
+
+    .header__logo {
+        justify-self: center;
+
+        & svg {
+            height: 60px;
+        }
+    }
+
+    .header__nav {
+        display: none;
+        position: absolute;
+        top: 64px;
+        left: 0;
+        z-index: 10;
+        background: #fff;
+        width: 100%;
+
+        & ul {
+            display: flex;
+            flex-direction: column;
+            padding-left: 30px;
+            max-width: 400px;
+            width: 100%;
+            border-right: 1px solid #999;
+
+            & li {
+                margin-top: 12px;
+            }
+        }
+    }
+
+    .slider__item-desc {
+        left: 30px;
+        width: 100%;
+    }
+
+    .slider__switch {
+        bottom: 20px;
+    }
+}
+
+@media(max-width: 840px) {
+    .slider__item-desc {
+        top: 40px;
+        left: 30px;
+        max-width: 500px;
+        width: 100%;
+
+        & h1 {
+            font-size: 30px;
+        }
+
+        & button {
+            font-size: 13px;
+        }
+    }
+}

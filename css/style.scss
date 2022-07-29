@@ -1,0 +1,72 @@
+$mainColor: #b4966e;
+$mainColorHover: #8F7552;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    max-width: 1646px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.btn-link {
+    background: transparent;
+    margin-top: 50px;
+    padding: 11px 30px;
+    font-size: 13px;
+    border: 1px solid $mainColor;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+        background: $mainColor;
+        color: #fff;
+    }
+}
+
+.btn-to-top {
+    position: fixed;
+    bottom: 80px;
+    right: 40px;
+    width: 80px;
+    height: 80px;
+    background-color: rgba(207,191,173,.5);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+@import "../scss/header";
+
+@import "../scss/slider";
+
+@import "../scss/building";
+
+@import "../scss/exhibition";
+
+@import "../scss/events";
+
+@import "../scss/collection";
+
+@import "../scss/news";
+
+@import "../scss/excursions";
+
+@import "../scss/footer";
+
+@import "../scss/tableHeader";
+
+@import "../scss/tableMain";
+
+@import "../scss/mobileHeader";

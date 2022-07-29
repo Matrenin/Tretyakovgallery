@@ -1,0 +1,45 @@
+.news {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+
+    & h1 {
+        align-self: flex-start;
+        font-size: 38px;
+    }
+
+    &__box {
+        width: 100%;
+        margin-top: 40px;
+        display: flex;
+        gap: 22px;
+        justify-content: space-between;
+    }
+
+    &__item {
+        max-width: 804px;
+        width: 100%;
+
+        &-box-img {
+            height: 422px;
+            overflow: hidden;
+        }
+
+        &-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 1s;
+        }
+
+        &:hover .news__item-img {
+            transform: scale(1.2);
+        }
+
+        & h4 {
+            margin-top: 20px;
+            font-size: 26px;
+        }
+    }
+}

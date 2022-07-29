@@ -1,0 +1,214 @@
+.footer {
+    margin-top: 70px;
+    background: #000;
+    color: #999;
+
+    &__main {
+        padding-top: 50px;
+        display: grid;
+        grid-template-columns: 5% 65% 30%;
+    }
+
+    &__nav {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding-left: 60px;
+
+        &-column h4{
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 15px;
+            margin-bottom: 16px;
+        }
+
+        &-list {
+            list-style: none;
+
+            & li {
+                padding: 5px 0;
+
+                & a {
+                    font-size: 14px;
+                    text-decoration: none;
+                    color: #999;
+
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    &__subscribe {
+        & form h4{
+            text-transform: uppercase;
+            font-size: 16px;
+            color: #fff;
+        }
+
+        &-border {
+            margin-top: 16px;
+            max-width: 500px;
+            width: 100%;
+            border: 1px solid #fff;
+            display: grid;
+            grid-template-columns: 80% 20%;
+            height: 56px;
+
+            & input {
+                width: 100%;
+                font-size: 22px;
+                padding: 6px 22px;
+                border: none;
+                outline: none;
+                color: #fff;
+                background: #000;
+            }
+
+            & button {
+                border: none;
+                outline: none;
+                background: #000;
+                cursor: pointer;
+            }
+        }
+
+        &-bot {
+            margin-top: 24px;
+            display: flex;
+            align-items: center;
+
+            & input {
+                display: none;
+            }
+
+            & label {
+                margin-left: 50px;
+                position: relative;
+                font-size: 12px;
+
+                &::before {
+                    width: 30px;
+                    height: 30px;
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: -50px;
+                    bottom: 0;
+                    right: 0;
+                    transform: scale(0.6);
+                    border: 1px solid #999;
+                }
+            }
+        }
+    }
+
+    &__social {
+
+        &-box {
+            margin-top: 50px;
+
+            & h4 {
+                text-transform: uppercase;
+                color: #fff;
+                font-size: 16px;
+            }
+        }
+
+        &-list {
+            margin-top: 20px;
+
+            & a {
+                margin-right: 20px;
+                text-decoration: none;
+                color: #fff;
+
+                & svg {
+                    fill: #999;
+
+                    &:hover {
+                        fill: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    &__action {
+        padding: 20px 0 40px 0;
+        display: flex;
+        justify-content: space-between;
+
+        &-box {
+            max-width: 502px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            & button {
+                background: transparent;
+                display: flex;
+                align-items: center;
+
+                & span {
+                    color: #999;
+                    margin-left: 20px;
+                    font-size: 12px;
+                }
+            }
+
+            & a {
+                text-decoration: none;
+                color: #999;
+                display: flex;
+                align-items: center;
+
+                & span {
+                    font-size: 12px;
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+
+    &__top {
+        border-bottom: 1px solid #999;
+    }
+
+    &__copyright {
+        padding: 20px 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        font-size: 13px;
+
+        &-item:nth-child(2) {
+            justify-self: center;
+        }
+
+        &-item:nth-child(3) {
+            justify-self: end;
+        }
+
+        & a {
+            font-size: 13px;
+            text-decoration: none;
+            color: #999;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+
+        &-item > a {
+            display: block;
+        }
+    }
+}
+
+.footer__subscribe-bot-checkbox:checked ~
+.footer__subscribe-bot-label::before {
+    background: #fff;
+    background-image: url(../img/checkmark.png);
+    background-size: 100%;
+}
