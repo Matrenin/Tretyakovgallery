@@ -69,18 +69,18 @@ class ItemExhibitions {
 
     getMarkup() {
         return `
-        <div class="exhibitions__item" data-id="${this.id}">
+        <a href="#" class="exhibitions__item" data-id="${this.id}">
             <img src="${this.img}" class="exhibitions__item-img" alt="exhibitions img" height="384">
-            <a class="exhibitions__item-adt" href="#">Уже идет</a>
-            <a href="#" class="exhibitions__item-buy">Купить билет</a>
+            <p class="exhibitions__item-adt">Уже идет</p>
+            <button class="exhibitions__item-buy">Купить билет</button>
             <div class="exhibitions__item-desc">
                 <p>${this.times}</p>
                 <h4>${this.title}</h4>
                 <span>${this.addres}</span>
             </div>
-        </div>
+        </a>
         `;
     }
 }
 
-const listExhibitions = new ListExhibitions();
+const listExhibitions = new ListExhibitions(".exhibitions__box", exhibitions);

@@ -48,16 +48,16 @@ class ItemEvents {
 
     getMarkup() {
         return `
-        <div class="events__item" data-id="${this.id}">
+        <a href="#" class="events__item" data-id="${this.id}">
             <img src="${this.img}" class="events__item-img" alt="events img" height="384">
-            <a class="events__item-adt" href="#">Скоро будет</a>
-            <a href="#" class="events__item-buy">Купить билет</a>
+            <p class="events__item-adt">Скоро будет</p>
+            <button class="events__item-buy">Купить билет</button>
             <div class="events__item-desc">
                 <p>${this.times}</p>
                 <h4>${this.title}</h4>
                 <span>${this.addres}</span>
             </div>
-        </div>
+        </a>
         `;
     }
 }

@@ -400,13 +400,13 @@ body {
           align-items: center;
 }
 
-.building__item-down a {
+.building__item-down > a {
   color: #b4966e;
   font-size: 14px;
   text-decoration: none;
 }
 
-.building__item-down a:hover {
+.building__item-down > a:hover {
   color: #8F7552;
   text-decoration: underline;
 }
@@ -510,6 +510,7 @@ body {
   border: 1px solid #fff;
   color: #fff;
   font-size: 13px;
+  background: transparent;
 }
 
 .exhibitions__item-buy:hover {
@@ -612,6 +613,7 @@ body {
   border: 1px solid #fff;
   color: #fff;
   font-size: 13px;
+  background: transparent;
 }
 
 .events__item-buy:hover {
@@ -675,6 +677,7 @@ body {
 .collection__item {
   max-width: 536px;
   color: #fff;
+  text-decoration: none;
 }
 
 .collection__item-box-img {
@@ -754,6 +757,8 @@ body {
 .news__item {
   max-width: 804px;
   width: 100%;
+  text-decoration: none;
+  color: #000;
 }
 
 .news__item-box-img {
@@ -853,6 +858,7 @@ body {
   border: 1px solid #fff;
   color: #fff;
   font-size: 13px;
+  background: transparent;
 }
 
 .excursions__item-buy:hover {

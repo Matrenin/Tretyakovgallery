@@ -79,7 +79,7 @@ class ItemBuilding {
             <a href="#">Подробнее</a>
             <button>Купить билет</button>
         </div>
-    </div`;
+    </div>`;
     }
 }
 

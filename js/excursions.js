@@ -62,17 +62,17 @@ class ItemExcursions {
 
     getMarkup() {
         return `
-        <div class="excursoins__item">
+        <a href="#" class="excursoins__item">
             <div class="excursions__item" data-id="${this.id}">
                 <img src="${this.img}" class="excursions__item-img" alt="excursions img" height="384">
-                <a class="excursions__item-adt" href="#">Уже идет</a>
-                <a href="#" class="excursions__item-buy">Купить билет</a>
+                <p class="excursions__item-adt" href="#">Уже идет</p>
+                <button class="excursions__item-buy">Купить билет</button>
                 <div class="excursions__item-desc">
                     <h4>${this.title}</h4>
                     <span>${this.addres}</span>
                 </div>
             </div>
-        </div>
+        </a>
         `;
     }
 }

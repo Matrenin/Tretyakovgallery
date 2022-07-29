@@ -44,7 +44,7 @@ class ItemCollection {
 
     getMarkup() {
         return `
-        <div class="collection__item" data-id="${this.id}">
+        <a href="#" class="collection__item" data-id="${this.id}">
             <div class="collection__item-box-img">
                 <img src="${this.img}" class="collection__item-img" alt="collection img" height="326">
             </div>
@@ -52,7 +52,7 @@ class ItemCollection {
                 <h4>${this.author}</h4>
                 <p>${this.title}</p>
             </div>
-        </div>
+        </a>
         `;
     }
 }
